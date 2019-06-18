@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}User | parkXes{% endblock title %}
+
+{% block content %}
+    <body style="padding-top:50px;">
+
+    <div class="container">
+    <h1>User Info</h1>
+
+    <a href="/new_user/">New User? Click Here</a>
+
+
+    <h4>Free Space</h4>
+    {% for name,lot in lots.items %}
+        <h5>{{ name }}</h5>
+        Lots
+        <p>{% for l in lot %}
+             {{ l }} ,
+            {% endfor %}
+            </p>
+    {% endfor %}
+
+
+    <h4>Book Free Space</h4>
+<form action="/verify/" method="post">
+<input type='text' name='mobile' id='mobile' placeholder="Mobile Number" autocomplete="off"/>
+    <select name="parkZone"  class="browser-default">
+                            <option value="" disabled selected>Choose the Parking Space</option>
+                          {% for name,lot in lots.items  %}
+                          <option value="{{ name }}">{{ name }}</option>
+                          {% endfor %}
+    </select>
+    <input type='text' name='freespace' id='freespace' placeholder="Enter Lot Id" autocomplete="off"/>
+    <button type="submit" class="btn btn-large">Book</button>
+</form>
+    </div>
+    </body>
+{% endblock content %}

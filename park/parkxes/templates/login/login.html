@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block title %}Login | parkXes{% endblock title %}
+
+{% block content%}
+<body>
+  <div class="section"></div>
+  <main>
+    <center>
+     
+      <div class="section"></div>
+
+      <h5 class="indigo-text">Login into your account</h5>
+      <div class="section"></div>
+
+      <div class="container">
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE; width:400px;">
+
+          <form class="col s12" method="post" action="/check_user/">
+              {% csrf_token %}
+            <div class='row'>
+              <div class='col s12'>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input class='validate' type='email' name='email' id='email' placeholder="E-mail" autocomplete="off"/>
+                <label for='email'>Enter your email</label>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input class='validate' type='password' name='password' id='password' placeholder="Password" autocomplete="off"/>
+                <label for='password'>Enter your password</label>
+              </div>
+              {% if failure %}
+                <a class='red-text' href='#'><b>Your Password or username is wrong</b></a>
+              {% else %}
+                  </li>
+                <a class='pink-text' href='#!'><b></b></a>
+              {% endif %}
+            </div>
+
+            <br />
+            <center>
+              <div class='row'>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+              </div>
+            </center>
+          </form>
+        </div>
+      </div>
+      <a href="/register/">Don't have an Account ? Create account</a>
+    </center>
+
+    <div class="section"></div>
+    <div class="section"></div>
+  </main>
+
+{% endblock content %}

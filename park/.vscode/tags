@@ -1,0 +1,114 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	../parkxes/migrations/0001_initial.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	../park/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../park/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:92
+AppConfig	../parkxes/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:4
+BASE_DIR	../park/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+BooleanField	../parkxes/models.py	/^from django.db.models import Model,OneToOneField,EmailField,CharField,BooleanField, IntegerField, ForeignKey, CASCADE$/;"	kind:namespace	line:4
+CASCADE	../parkxes/models.py	/^from django.db.models import Model,OneToOneField,EmailField,CharField,BooleanField, IntegerField, ForeignKey, CASCADE$/;"	kind:namespace	line:4
+CarUser	../parkxes/models.py	/^class CarUser(Model):$/;"	kind:class	line:14
+CharField	../parkxes/models.py	/^from django.db.models import Model,OneToOneField,EmailField,CharField,BooleanField, IntegerField, ForeignKey, CASCADE$/;"	kind:namespace	line:4
+DATABASES	../park/settings.py	/^DATABASES = {$/;"	kind:variable	line:77
+DEBUG	../park/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+DatabaseFunctions.py	../parkxes/DatabaseFunctions.py	1;"	kind:file	line:1
+EmailField	../parkxes/models.py	/^from django.db.models import Model,OneToOneField,EmailField,CharField,BooleanField, IntegerField, ForeignKey, CASCADE$/;"	kind:namespace	line:4
+ForeignKey	../parkxes/models.py	/^from django.db.models import Model,OneToOneField,EmailField,CharField,BooleanField, IntegerField, ForeignKey, CASCADE$/;"	kind:namespace	line:4
+HttpResponse	../parkxes/views.py	/^from django.http import HttpResponse$/;"	kind:namespace	line:5
+INSTALLED_APPS	../park/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+IntegerField	../parkxes/models.py	/^from django.db.models import Model,OneToOneField,EmailField,CharField,BooleanField, IntegerField, ForeignKey, CASCADE$/;"	kind:namespace	line:4
+LANGUAGE_CODE	../park/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:111
+MIDDLEWARE	../park/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:43
+Migration	../parkxes/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Model	../parkxes/models.py	/^from django.db.models import Model,OneToOneField,EmailField,CharField,BooleanField, IntegerField, ForeignKey, CASCADE$/;"	kind:namespace	line:4
+OneToOneField	../parkxes/models.py	/^from django.db.models import Model,OneToOneField,EmailField,CharField,BooleanField, IntegerField, ForeignKey, CASCADE$/;"	kind:namespace	line:4
+ParkingLocation	../parkxes/models.py	/^class ParkingLocation(Model):$/;"	kind:class	line:8
+ParkxesConfig	../parkxes/apps.py	/^class ParkxesConfig(AppConfig):$/;"	kind:class	line:7
+ROOT_URLCONF	../park/settings.py	/^ROOT_URLCONF = 'park.urls'$/;"	kind:variable	line:53
+STATIC_URL	../park/settings.py	/^STATIC_URL = '\/static\/'/;"	kind:variable	line:125
+TEMPLATES	../park/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:55
+TIME_ZONE	../park/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:113
+TestCase	../parkxes/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:4
+USE_I18N	../park/settings.py	/^USE_I18N = True$/;"	kind:variable	line:115
+USE_L10N	../park/settings.py	/^USE_L10N = True$/;"	kind:variable	line:117
+USE_TZ	../park/settings.py	/^USE_TZ = True$/;"	kind:variable	line:119
+User	../parkxes/views.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:3
+UserAdmin	../parkxes/admin.py	/^from django.contrib.auth.admin import UserAdmin$/;"	kind:namespace	line:5
+WSGI_APPLICATION	../park/settings.py	/^WSGI_APPLICATION = 'park.wsgi.application'$/;"	kind:variable	line:71
+__init__.py	../park/__init__.py	1;"	kind:file	line:1
+__init__.py	../parkxes/__init__.py	1;"	kind:file	line:1
+__init__.py	../parkxes/migrations/__init__.py	1;"	kind:file	line:1
+add_user_new	../parkxes/views.py	/^def add_user_new(request):$/;"	kind:function	line:25
+admin	../park/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin	../parkxes/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:4
+admin.py	../parkxes/admin.py	1;"	kind:file	line:1
+application	../park/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../parkxes/apps.py	1;"	kind:file	line:1
+authenticate	../parkxes/views.py	/^from django.contrib.auth import authenticate, login, logout$/;"	kind:namespace	line:7
+check_user	../parkxes/views.py	/^def check_user(request):$/;"	kind:function	line:38
+college	../parkxes/models.py	/^    college = CharField(max_length=20)$/;"	kind:variable	line:17
+create_user	../parkxes/DatabaseFunctions.py	/^def create_user(self, email, password=None):$/;"	kind:function	line:2
+csrf_exempt	../parkxes/views.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:6
+dashboard	../parkxes/views.py	/^def dashboard(request):$/;"	kind:function	line:50
+db	../parkxes/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+deletion	../parkxes/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+dependencies	../parkxes/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:13
+designation	../parkxes/models.py	/^    designation = CharField(max_length=30)$/;"	kind:variable	line:20
+django	../manage.py	/^            import django$/;"	kind:namespace	line:14
+django	../parkxes/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+execute_from_command_line	../manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+field	../parkxes/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='parkxes.ParkingLocation'),$/;"	kind:variable	line:40
+fields	../parkxes/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+fields	../parkxes/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:31
+get_wsgi_application	../park/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+index	../parkxes/views.py	/^def index(request):$/;"	kind:function	line:9
+initial	../parkxes/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
+isParked	../parkxes/models.py	/^    isParked = BooleanField(default=False)$/;"	kind:variable	line:11
+isParked	../parkxes/models.py	/^    isParked = BooleanField(default=False)$/;"	kind:variable	line:16
+licensePlateNumber	../parkxes/models.py	/^    licensePlateNumber = CharField(max_length=10, primary_key=True)$/;"	kind:variable	line:15
+login	../parkxes/views.py	/^from django.contrib.auth import authenticate, login, logout$/;"	kind:namespace	line:7
+loginIndex	../parkxes/views.py	/^def loginIndex(request):$/;"	kind:function	line:12
+logout	../parkxes/views.py	/^from django.contrib.auth import authenticate, login, logout$/;"	kind:namespace	line:7
+logoutIndex	../parkxes/views.py	/^def logoutIndex(request):$/;"	kind:function	line:15
+lotId	../parkxes/models.py	/^    lotId = IntegerField(primary_key=True)$/;"	kind:variable	line:9
+manage.py	../manage.py	1;"	kind:file	line:1
+migrations	../parkxes/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+mobileNumber	../parkxes/models.py	/^    mobileNumber = IntegerField()$/;"	kind:variable	line:21
+model_name	../parkxes/migrations/0001_initial.py	/^            model_name='caruser',$/;"	kind:variable	line:38
+models	../parkxes/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	../parkxes/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+models.py	../parkxes/models.py	1;"	kind:file	line:1
+name	../parkxes/apps.py	/^    name = 'parkxes'$/;"	kind:variable	line:8
+name	../parkxes/migrations/0001_initial.py	/^            name='CarUser',$/;"	kind:variable	line:18
+name	../parkxes/migrations/0001_initial.py	/^            name='ParkingLocation',$/;"	kind:variable	line:30
+name	../parkxes/migrations/0001_initial.py	/^            name='preferedParkingLocation',$/;"	kind:variable	line:39
+name	../parkxes/models.py	/^    name = CharField(max_length=30)$/;"	kind:variable	line:19
+operations	../parkxes/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+os	../manage.py	/^import os$/;"	kind:namespace	line:2
+os	../park/settings.py	/^import os$/;"	kind:namespace	line:13
+os	../park/wsgi.py	/^import os$/;"	kind:namespace	line:10
+preferedParkingLocation	../parkxes/models.py	/^    preferedParkingLocation = ForeignKey(ParkingLocation, on_delete=CASCADE)$/;"	kind:variable	line:22
+redirect	../parkxes/views.py	/^from django.shortcuts import render,redirect$/;"	kind:namespace	line:4
+register	../parkxes/views.py	/^def register(request):$/;"	kind:function	line:21
+render	../parkxes/views.py	/^from django.shortcuts import render,redirect$/;"	kind:namespace	line:4
+settings.py	../park/settings.py	1;"	kind:file	line:1
+sys	../manage.py	/^import sys$/;"	kind:namespace	line:3
+tests.py	../parkxes/tests.py	1;"	kind:file	line:1
+unicode_literals	../parkxes/admin.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unicode_literals	../parkxes/apps.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unicode_literals	../parkxes/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../parkxes/models.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unicode_literals	../parkxes/tests.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unicode_literals	../parkxes/views.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+url	../park/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:16
+urlpatterns	../park/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urls.py	../park/urls.py	1;"	kind:file	line:1
+vehicleType	../parkxes/models.py	/^    vehicleType = CharField(max_length=20)$/;"	kind:variable	line:18
+views	../park/urls.py	/^from parkxes import views$/;"	kind:namespace	line:18
+views.py	../parkxes/views.py	1;"	kind:file	line:1
+wsgi.py	../park/wsgi.py	1;"	kind:file	line:1
+zone	../parkxes/models.py	/^    zone = CharField(max_length=10)$/;"	kind:variable	line:10

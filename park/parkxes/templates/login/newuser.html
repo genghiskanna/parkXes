@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}User | parkXes{% endblock title %}
+
+{% block content %}
+    <body style="padding-top:50px;" class="container">
+    <h1>New User</h1>
+    <form action="/add_caruser/" method="post">
+        <input type="text" name="nameu" id="nameu" placeholder="Name">
+        <input type="text" name="license" id="license" placeholder="License (if multiple enter with ,)">
+        <input type="text" name="designation" id="designation" placeholder="Designation (student or teacher)">
+        <input type="number" name="mobile" id="mobile" placeholder="Mobile No">
+        <button type="submit" class="btn-large">Create Account</button>
+    </form>
+    </body>
+{% endblock %}

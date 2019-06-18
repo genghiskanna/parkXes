@@ -1,0 +1,289 @@
+{% extends 'layout.html' %} {% block title %}Editor | parkXes{% endblock title %} {% block content %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: all 500ms;
+    }
+
+    button:focus{
+        background-color: transparent;
+    }
+
+    .boxes {
+        height: 100px;
+        width: 100px;
+        border: black;
+        border-style: solid;
+        border-width: 1px 1px 0px 0px;
+        margin: 0;
+    }
+
+    .left-corner {
+        border-left-width: 1px;
+    }
+
+    .bottom-corner {
+        border-bottom-width: 1px;
+    }
+
+    .row {
+        margin: 0;
+    }
+    section{
+        height: 600px !important;
+    }
+
+    a{
+        margin-left: 50px;
+    }
+
+    .margin-top{
+        margin-top: 50px;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+
+<body zoneid = "{{ zoneid }}">
+    <h2>Editor</h2>
+    <section id="parent" class="container">
+        <div class="row">
+            <button class="col l2 boxes left-corner" id="00">
+                
+            </button>
+            <button class="col l2 boxes" id="01">
+                
+            </button>
+            <button class="col l2 boxes" id="02">
+                
+            </button>
+            <button class="col l2 boxes" id="03">
+                
+            </button>
+            <button class="col l2 boxes" id="04">
+                
+            </button>
+            <button class="col l2 boxes" id="05">
+                
+            </button>
+        </div>
+        <div class="row">
+            <button class="col l2 boxes left-corner" id="10">
+                
+            </button>
+            <button class="col l2 boxes" id="11">
+                
+            </button>
+            <button class="col l2 boxes" id="12">
+                
+            </button>
+            <button class="col l2 boxes" id="13">
+                
+            </button>
+            <button class="col l2 boxes" id="14">
+                
+            </button>
+            <button class="col l2 boxes" id="15">
+                
+            </button>
+        </div>
+        <div class="row">
+            <button class="col l2 boxes left-corner" id="20">
+                
+            </button>
+            <button class="col l2 boxes" id="21">
+                
+            </button>
+            <button class="col l2 boxes" id="22">
+                
+            </button>
+            <button class="col l2 boxes" id="23">
+                
+            </button>
+            <button class="col l2 boxes" id="24">
+                
+            </button>
+            <button class="col l2 boxes" id="25">
+                
+            </button>
+        </div>
+        <div class="row">
+            <button class="col l2 boxes left-corner" id="30">
+                
+            </button>
+            <button class="col l2 boxes" id="31">
+                
+            </button>
+            <button class="col l2 boxes" id="32">
+                
+            </button>
+            <button class="col l2 boxes" id="33">
+                
+            </button>
+            <button class="col l2 boxes" id="34">
+                
+            </button>
+            <button class="col l2 boxes" id="35">
+                
+            </button>
+        </div>
+        <div class="row">
+            <button class="col l2 boxes left-corner" id="40">
+                
+            </button>
+            <button class="col l2 boxes" id="41">
+            </button>
+            <button class="col l2 boxes" id="42">
+                
+            </button>
+            <button class="col l2 boxes" id="43">
+                
+            </button>
+            <button class="col l2 boxes" id="44">
+                
+            </button>
+            <button class="col l2 boxes" id="45">
+                
+            </button>
+        </div>
+        <div class="row">
+            <button class="col l2 boxes left-corner bottom-corner" id="50">
+                
+            </button>
+            <button class="col l2 boxes bottom-corner" id="51">
+                
+            </button>
+            <button class="col l2 boxes bottom-corner" id="52">
+                
+            </button>
+            <button class="col l2 boxes bottom-corner" id="53">
+                
+            </button>
+            <button class="col l2 boxes bottom-corner" id="54">
+                
+            </button>
+            <button class="col l2 boxes bottom-corner" id="55">
+                
+            </button>
+        </div>
+    </section>
+    <section id="edit">
+        <div class="container">
+            <div class="row">
+                <div class="col l6">
+                    <!--
+                    <h4>Edit Properties {{ zone }}</h4>
+                    <input id="lot_id" type="text">
+                    <label for="lot_id">Lot Id</label>
+                    -->
+                </div>
+                <div class="col l6">
+                    <h4>Tools</h4>
+                    <a onclick="addCar()" class="waves-effect waves-circle waves-dark btn-floating btn-large secondary-content  tooltipped modal-trigger" data-position="left" data-tooltip="Add Lot"><i class="material-icons">local_taxi</i></a>
+                    <a onclick="addRoad()" class="waves-effect waves-circle waves-dark btn-floating btn-large secondary-content  tooltipped modal-trigger" data-position="left" data-tooltip="Add Road"><i class="material-icons">map</i></a>
+                    <a onclick="deleteR()" class="waves-effect waves-circle waves-dark btn-floating btn-large secondary-content red tooltipped modal-trigger" data-position="left" data-tooltip="Delete"><i class="material-icons">delete</i></a>
+                    <a onclick="editR()" class="waves-effect waves-circle waves-dark btn-floating btn-large secondary-content  tooltipped modal-trigger" data-position="left" data-tooltip="Edit"><i class="material-icons">mouse</i></a>
+                </div>
+            </div>
+            <div class="row">
+                    <a class="btn-large waves-effect margin-top" onclick="saveD()">Save</a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<script>
+    {% if lots|length == 0 %}
+    var editArray = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
+    {% else %}
+    var editArray = {{ lots }}
+    {% endif %}
+    var globeCar =  false;
+    var globeRoad = false;
+    var globeDelete = false;
+    var row = 0;
+    var col = 0;
+
+    // draw edit array
+    for(row=0;row<6;row++){
+        for(col=0;col<6;col++) {
+            var ele = document.getElementById(row.toString() + col.toString());
+            if (editArray[row][col] == 1) {
+                ele.innerHTML = "<i class='material-icons' style='font-size:3em'>local_taxi</i>";
+                ele.setAttribute("align", "true");
+            } else if (editArray[row][col] == 2) {
+                ele.innerHTML = "";
+                ele.setAttribute("style", "background:red");
+            }
+            else if (editArray[row][col] == 3) {
+                ele.innerHTML = "parked";
+            }
+        }
+    }
+    for(row=0;row<6;row++){
+        for(col=0;col<6;col++){
+            document.getElementById(row.toString()+col.toString()).addEventListener("click", function(e){
+                if(globeCar == false && globeRoad == false && globeDelete == false){
+                    alert("Select a tool");
+                }else if(globeCar == true){
+                    this.innerHTML = "<i class='material-icons' style='font-size:3em'>local_taxi</i>";
+                    this.setAttribute("align","true");
+                    this.removeAttribute("style");
+                } else if(globeRoad == true){
+                    this.innerHTML = "";
+                    this.setAttribute("style","background:red");
+                    this.removeAttribute("align");
+                } else{
+                    this.removeAttribute("style");
+                    this.removeAttribute("align");
+                    this.innerHTML = "";
+                }
+            });
+        }
+    }
+
+
+    function addCar(){
+        globeCar = true;
+        globeDelete = false;
+        globeRoad = false;
+    }
+
+    function addRoad(){
+        globeCar = false;
+        globeDelete = false;
+        globeRoad = true;
+    }
+
+    function deleteR(){
+        globeDelete = true;
+        globeCar = false;
+        globeRoad = false;
+    }
+
+
+    function saveD(){
+        for(row=0;row<6;row++){
+            for(col=0;col<6;col++){
+                var ele = document.getElementById(row.toString()+col.toString());
+                if(ele.hasAttribute("align")){
+                    window.editArray[row][col] = 1;
+                } else if(ele.hasAttribute("style")){
+                    window.editArray[row][col] = 2;
+                } else{
+                    window.editArray[row][col] = 0;
+                }
+            }
+        }
+        var zoneid = document.getElementsByTagName("body")[0].getAttribute("zoneid");
+        var data = {'editArray[][]': editArray, 'zoneid': zoneid};
+        $.post("/add_lots/", data);
+        window.location = "/dashboard/"
+    } 
+</script>
+{% endblock content%}

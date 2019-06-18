@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block title %}parkXes | Smart Parking{% endblock title %}
+
+{% block content %}
+    <body>
+        {% load static %}
+                <nav class="container">
+                    <a href="#" class="logo">parkXes</a>
+                      <ul class="nav-p">
+                          <!--
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                          -->
+                            {% if user.is_authenticated %}
+                                <li><a href="/login/"class="bold">Welcome! {{ user.username }}</a></li>
+                                <li><a href="/logout/">Logout</a></li>
+                                <li><a href="/dashboard/">Dashboard</a></li>
+                            {% else %}
+                                <li><a href="/login/" class="bold">Sign In</a></li>    
+                            {% endif %}
+                        
+                      </ul>
+                </nav>
+
+
+                    <section id="home">
+                        <img src="{% static "img/FirstPageTruck.png" %}" id="firstImg">
+                      <div class="container">
+                      
+                      
+                      <div class="main-body">
+                        <p class="heading">The New Parking Management System</p> 
+                        <p class="sub-heading">parkXes is the best integrated software platform to monitor parking lots automatically</p>
+
+                      </div>
+                    </div>
+                    </section>
+
+                    <section id="learn">
+                        <img src="{% static "img/Truck.png" %}" id="secondImg">
+                        <div class="container">
+             
+                        <div class="main-body">
+                            <p class="heading white-text">The Complete Package For Parking Management</p> 
+                            <p class="sub-heading white-text">parkXes has inbuilt features to monitor and alerts the passenger on the availability of space. Moreover everything is connected to the cloud and you need only a computer and internet connection to start.  </p>
+
+                          </div>
+                          </div>
+                    </section>
+
+
+                    <section id="learn2">
+                        <div id="particles-js">
+                            <div class="p-body">
+                            <p class="s-heading white-text">Using the state of the art Deep Learning Models</p> 
+                            <p class="s-sub-heading white-text">Highly trained Deep Learning Model will accurately identify the car and its owner and intelligently allocates space to the user. Its Accurate thats what it means.</p>
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer>
+                        <p class="foot">parkXes &copy; 2018</p>
+                    </footer>
+            <script type="text/javascript" src="{% static "js/particles.min.js" %}"></script>
+{% endblock content %}

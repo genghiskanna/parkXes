@@ -1,0 +1,203 @@
+@font-face {
+    font-family: AvenirNextRegular;
+    src: url("../fonts/regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: AvenirNextBold;
+    src: url("../fonts/bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: AvenirNextMedium;
+    src: url("../fonts/medium.ttf") format("truetype");
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    font-family: AvenirNextRegular;
+    letter-spacing: 0.5px;
+}
+
+nav{
+    background-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    height: 10vh;
+
+}
+
+.logo{
+    float: left;
+    color: rgba(0,0,0,0.7);
+    font-size: 1.5em;
+    font-family: AvenirNextBold;
+
+}
+.nav-p{
+    float: right;
+}
+
+.nav-p>li>a{
+    color:rgba(0,0,0,0.7);
+    font-family: AvenirNextMedium;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.nav-p>li>a:hover{
+    color:rgba(0,0,0,1);
+    background-color: transparent;
+}
+
+.bold{
+    color:black !important;
+}
+
+.heading{
+    font-size: 2em;
+    color: rgba(0,0,0,0.7);
+    font-family: AvenirNextBold;
+    text-align: right;
+    margin-bottom: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.s-heading{
+
+    font-size: 2em;
+    color: rgba(0,0,0,0.7);
+    font-family: AvenirNextBold;
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+
+}
+.s-sub-heading{
+
+ 
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    top: 100px;
+}
+
+.sub-heading{
+
+    width: 40%;
+    margin: 0;
+    position: absolute;
+    right:0;
+    top: 100px;
+}
+
+
+
+.main-body{
+    position: relative;
+    align-items: right;
+}
+
+
+img{
+    position: absolute;
+    width: 70%;
+}
+
+#home{
+    height:90vh;
+}
+
+#learn{
+    padding-top: 10vh;
+    background: linear-gradient(to bottom right, #493FFF,#A6FFCB);
+}
+
+
+#firstImg{
+    bottom: 0;
+}
+
+#secondImg{
+    left:0;
+    bottom: 0;
+}
+
+.white-text{
+    color: rgba(246,246,246,0.8) !important;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #412234;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  footer{
+      width: 100vw;
+      height: 30vh;
+      background-color: #000029;
+    padding-top: 10vh;
+  }
+
+  .foot{
+      text-align: center;
+      margin: 0;
+      font-size: 2em;
+      font-family: AvenirNextMedium;
+      color: rgba(255,255,255,0.6);
+  }
+  .p-body{
+      position: absolute;
+      width: 100vw;
+
+      padding-top: 10vh;
+  }
+
+
+
+  /* dashboard */
+  .park-panel{
+    background-image: url("/static/img/back1.jpg");
+    background-size: cover;
+    padding: 10px 30px 10px 30px;
+      width: 40vw;
+      height: 300px;
+      border-radius: 10px;
+      overflow: scroll;
+  }
+
+  .parent-park{
+      position: relative;
+      width: 40vw;
+  }
+
+  .add-park{
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      z-index: 99;
+  }
